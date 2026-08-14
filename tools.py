@@ -67,7 +67,6 @@ def search_listings(
         4. Drop any listings with a score of 0 (no relevant matches).
         5. Sort by score, highest first, and return the listing dicts.
 
-    Before writing code, fill in the Tool 1 section of planning.md.
     """
     listings = load_listings()
 
@@ -130,7 +129,6 @@ def suggest_outfit(new_item: dict, wardrobe: dict) -> str:
            and named pieces from the wardrobe.
         4. Return the LLM's response as a string.
 
-    Before writing code, fill in the Tool 2 section of planning.md.
     """
     item_desc = (
         f"Item: {new_item.get('title', 'Unknown')}\n"
@@ -204,7 +202,6 @@ def create_fit_card(outfit: str, new_item: dict) -> str:
            and asks for a caption matching the style guidelines above.
         3. Call the LLM and return the response.
 
-    Before writing code, fill in the Tool 3 section of planning.md.
     """
     # Step 1: Guard against empty/missing outfit
     if not outfit or not outfit.strip():
