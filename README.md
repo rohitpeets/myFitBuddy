@@ -14,7 +14,7 @@ The agent follows a structured planning workflow that:
 # Project Structure
 
 ```text
-ai201-project2-fitfindr-starter/
+fitfindr/
 ├── agent.py                   # Planning loop and session management
 ├── app.py                     # Gradio user interface
 ├── tools.py                   # Core agent tools
